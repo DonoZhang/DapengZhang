@@ -1,0 +1,47 @@
+.navigation{
+    width: 85%;
+}
+
+.content{
+    display: inline;
+    white-space: nowrap;
+}
+
+.page{
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+    display: none;
+}
+
+.start-page-container{
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.start-page-header{
+    background-color: rgb(57, 201, 129);
+    overflow: visible;
+}
+
+.start-page-header-content{
+    color: white;
+}
+
+.start-page-header-content h1{
+    font-size: 50px;
+    letter-spacing: 1.5px;
+}
+
+
+
+.start-page-content{
+    background-color: white;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+.start-page-photo img{
+    width: 300px;
+    height:auto;
+}
