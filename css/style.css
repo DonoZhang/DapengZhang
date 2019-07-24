@@ -200,10 +200,6 @@ a.email{
     word-break: break-all;
 }
 
-.contact-details div:first-child{
-    overflow-x: scroll;
-}
-
 .contact-details div svg{
     display: inline-block !important;
     color: rgb(57, 201, 129); 
