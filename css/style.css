@@ -1,5 +1,6 @@
 .navbar{
     background-color: rgb(57, 201, 129);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
 .navigation, .content{
@@ -206,3 +207,14 @@ a.email{
     width:16px !important;
     margin-right: 20px;
 }
+
+@media only screen and (min-width: 991px) {
+    .navbar{
+      background-color: rgb(52, 58, 64);
+      height: 60px;
+    }
+    .surname{
+        color:rgb(65, 200, 131);
+        font-weight: 600;
+    }
+  }
