@@ -197,10 +197,12 @@ a.email{
 
 .contact-details div{
     margin: 20px;
+    word-break: break-all;
 }
 
 .contact-details div svg{
     display: inline-block !important;
     color: rgb(57, 201, 129); 
-    width: 40px !important;
+    width:16px !important;
+    margin-right: 20px;
 }
