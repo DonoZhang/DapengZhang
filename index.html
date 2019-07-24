@@ -7,18 +7,18 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/fontawesome-free-5.9.0-web/css/all.css">
+        <link rel="stylesheet" href="css/fontawesome-free-5.9.0-web//css/all.css">
         <link rel="stylesheet" href="css/style.css">
         <title>Dapeng Zhang</title>
     </head>
-    <body class="bg-dark">
-        <nav class="navbar navbar-expand-md navbar-dark bg-success fixed-top">
-            <div class="container navigation mw-100">
+    <body>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+            <div class="container navigation">
                 <a href="#" class="navbar-brand">Dapeng Zhang</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navigation">
+                <div class="collapse navbar-collapse text-right" id="navigation">
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item" id="nav-home">
                             <a href="#home" class="nav-link">Home</a>
@@ -40,127 +40,228 @@
             </div>  
         </nav>
         <div class="content">
-            <div class="row page" id="home">
-                <div class="col-1"></div>
-                 <div class="container-fluid col-10">
-                    <div class="start-page-container">
-                        <div class="start-page-header row">
-                            <div class="start-page-photo d-inline-block col-md-4 col-sm-12 text-center">
+            <div class="page" id="home">
+                    <div class="page-container">
+                        <div class="page-header row">
+                            <div class="page-photo d-inline-block col-md-4 col-sm-12 pt-4 pl-md-5 text-center">
                                 <img src="Images/photo.jpg" alt="photo" class="img-thumbnail rounded">
                             </div>
-                            <div class="start-page-header-content col-md-8 col-sm-12 d-inline-block text-center pt-5">
+                            <div class="page-header-content col-md-8 col-sm-12 d-inline-block text-center pt-5">
                                 <h1>Dapeng Zhang</h1>
                                 <p>Full-stack Web Developer</p>
                                 <div class="social-links">
-                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
                                     <a href="#"><i class="fab fa-weixin"></i></a>
-                                    <a href="#"><i class="fab fa-github-square"></i></a>
+                                    <a href="#"><i class="fab fa-github"></i></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="start-page-content px-4 py-5">
-                            <h2>About Me</h2>
-                            <p>blablabla</p>
+                        <div class="page-content p-5 row">
+                            <div class="col-md-6 col-sm-12 px-sm-5 px-md-3"> 
+                                <h2>About <span class="colored-text">Me</span></h2>
+                                <p>Hello! I am Dapeng Zhang. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum ullamcorper sem, at placerat dolor volutpat ac. Duis nulla enim, condimentum nec ultricies.</p>
+                            </div>
+                            <div class="col-md-6 col-sm-12"> 
+                                <table class="table table-borderless table-sm">
+                                    <tr><td>Age</td><td>27</td></tr>
+                                    <tr><td>Residence</td><td>Australia</td></tr>
+                                    <tr><td>Address</td><td>41/212 the Avenue, Parkville VIC</td></tr>
+                                    <tr><td>Email</td><td><a class = "email" href="mailto: dapengzhang1992@gmail.com">dapengzhang1992@gmail.com</a></td></tr>
+                                    <tr><td>Phone</td><td>0452609520</td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="page" id="resume">
+                    <div class="page-container">
+                        <div class="page-header p-5 text-center">
+                            <div class="page-header-content d-inline-block">
+                                <h1>Resume</h1>
+                            </div>
+                        </div>
+                        <div class="page-content">
+                            <div class="row">
+                                <div class="summary col-md-6 col-sm-12">
+                                    <div>
+                                        <h2>Summary</h2>
+                                        <ul>
+                                            <li>Strong self-learning ability & motivation</li>
+                                            <li>Detail-oriented and perfectionistic</li>
+                                            <li>Seek for challenges</li>
+                                            <li>A good team player</li>
+                                            <li>Excellent Time and task management skills</li>
+                                            <li>Experience of working with clients</li>
+                                            <li>Excellent communication skills</li>
+                                            <li>Fluent in both English & mandarin</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="technicalSkills col-md-6 col-sm-12">
+                                    <div class="accordion list-group list-group-flush" id="technical-skills">
+                                        <h2>Technical Skills</h2>
+                                        <ul class="collapse" id="back-end" data-parent="#technical-skills">
+                                            <li>JAVA<span class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%">80%</span></li>
+                                            <li>C#</li>
+                                            <li>PHP</li>
+                                            <li>Node.js</li>
+                                        </ul>
+                                        <a class="list-group-item list-group-item-action active" data-toggle="collapse" href="#back-end">Back-end</a>
+                                        
+                                        <ul class="collapse" id="front-end" data-parent="#technical-skills">
+                                            <li>Javascript</li>
+                                            <li>CSS</li>
+                                            <li>Bootstrap</li>
+                                            <li>HTML5</li>
+                                            <li>React.js</li>
+                                            <li>jQuery</li>
+                                        </ul>
+                                        <a class="list-group-item list-group-item-action" data-toggle="collapse" href="#front-end">Front-end</a>
+                                        
+                                        <ul class="collapse" id="database" data-parent="#technical-skills">
+                                            <li>SSMS</li>
+                                            <li>MySQL</li>
+                                            <li>Apache SQL Server</li>
+                                        </ul>
+                                        <a class="list-group-item list-group-item-action" data-toggle="collapse" href="#database">Database</a>
+                                        
+                                        <ul class="collapse" id="designs" data-parent="#technical-skills">
+                                            <li>Declarative Programming</li>
+                                            <li>MVC</li>
+                                            <li>Imperative Programming</li>
+                                            <li>Accessibility Design</li>
+                                        </ul>
+                                        <a class="list-group-item list-group-item-action" data-toggle="collapse" href="#designs">Designs</a>
+                                    
+                                        <ul class="collapse" id="tools" data-parent="#technical-skills">
+                                            <li>VScode</li>
+                                            <li>Visual Studio</li>
+                                            <li>NetBeans</li>
+                                            <li>SourceTree</li>
+                                        </ul>
+                                        <a class="list-group-item list-group-item-action" data-toggle="collapse" href="#tools">Tools</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="professionalExperience col-md-6 col-sm-12">
+                                    <h2>Professional Experience</h2>
+                                    <div class="timeline">
+                                        <div class="timeline-item">
+                                            <p>Web Content Publisher</p>
+                                            <p><small><span class="colored-text">2016~2017</span> | Xberts.com Beijing, China</small></p>
+                                            <p>Write and publish product descriptions on Xberts.com. Participate in website design.</p>
+                                        </div>
+                                         <div class="timeline-item">
+                                            <p>Information Assistant</p>
+                                            <p><small><span class="colored-text">2016</span> | the United Nations New York, the US</small></p>
+                                            <p>Broadcast & publish Radio report on news.un.org/zh/</p>
+                                        </div>
+                                         <div class="timeline-item">
+                                            <p>Digital Assistant</p>
+                                            <p><small><span class="colored-text">2015~2016</span> | Australasia Elite Melbourne, Australia</small></p>
+                                            <p>Website development with Wix.com and web content management.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="education col-md-6 col-sm-12">
+                                    <h2>Education Experience</h2>
+                                    <div class="timeline">
+                                        <div class="timeline-item">
+                                            <p>Full-stack Web Development Course</p>
+                                            <p><small><span class="colored-text">2019</span> | Jiangren Melbourne, Australia</small></p>
+                                            <p>Reactjs + Nodejs + REST API + Agile</p>
+                                        </div>
+                                         <div class="timeline-item">
+                                            <p>Global Media Communication</p>
+                                            <p><small><span class="colored-text">2015-2018</span> | University of Melbourne Melbourne, Australia</small></p>
+                                            <p>Modern media ritual and online crisis communication</p>
+                                        </div>
+                                         <div class="timeline-item">
+                                            <p>Bachelor of Engineering in Integrated Circuit Design and Integrated System</p>
+                                            <p><small><span class="colored-text">2015~2016</span> | Australasia Elite Melbourne, Australia</small></p>
+                                            <p>Analogue & Digital Integrated Circuit design & Software Fundamentals</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects w-100">
+                                用bootstrap carousel实现
+                                <div>Project Example 1</div>
+                                <div>Project Example 2</div>
+                                <div>Project Example 3</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-1"></div>
-            </div>
-            <div class="row page" id="resume">
-                <div class="col-1"></div>
-                 <div class="container-fluid col-10">
-                    <div class="start-page-container mt-5 mx-auto">
-                        <div class="start-page-header p-3">
-                            <div class="start-page-photo d-inline-block">
-                                <img src="Images/photo.jpg" alt="photo" class="img-thumbnail mt-4 ml-4 rounded">
-                            </div>
-                            <div class="start-page-header-content d-inline-block">
-                                <h1>Dapeng Zhang Resume</h1>
-                                <p></p>
-                                <div></div>
-                            </div>
+            <div class="page" id="services">
+                <div class="page-container mx-auto">
+                    <div class="page-header p-5 text-center">
+                        <div class="page-header-content d-inline-block">
+                            <h1>Services</h1>
                         </div>
-                        <div class="start-page-content px-4 py-5">
-                            <h2>About Me</h2>
-                            <p>blablabla</p>
+                    </div>
+                    <div class="page-content px-4 py-5">
+                        <p>blablabla</p>
+                    </div>
+                </div>
+            </div>
+            <div class="page" id="blog">
+                <div class="page-container mx-auto">
+                    <div class="page-header p-5 text-center">
+                        <div class="page-header-content d-inline-block">
+                            <h1>Blog</h1>
+                        </div>
+                    </div>
+                    <div class="page-content px-4 py-5">
+                        <p>blablabla</p>
+                    </div>
+                </div>
+            </div>
+            <div class="page" id="contact">
+                <div class="page-container mx-auto">
+                    <div class="page-header p-4 text-center">
+                        <div class="page-header-content">
+                            <h1>Contact</h1>
+                        </div>
+                    </div>
+                    <div class="page-content px-4 py-5 row">
+                        <div class="contact-details col-md-12 col-lg-6 px-auto">
+                            <h2>Get in Touch</h2>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25216.754086703222!2d144.94564133909915!3d-37.81126105416087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642caf37771c5%3A0x834e664d24dced61!2sCBD%2C+Melbourne+VIC+3000!5e0!3m2!1sen!2sau!4v1563936526816!5m2!1sen!2sau" width="450" height="200" frameborder="0" style="border:0" allowfullscreen></iframe> 
+                            <div><i class="fas fa-map-marker-alt"></i> Melbourne, Australia</div>
+                            <div><i class="fas fa-envelope-square"></i><a class = "email" href="mailto: dapengzhang1992@gmail.com">dapengzhang1992@gmail.com</a></div>
+                            <div><i class="fas fa-mobile-alt"></i>0452609520</div>
+                        </div>
+                        <div class="contact-details col-md-12 col-lg-6">
+                            <form>
+                                <div class="form-group">
+                                    <label for="full-name">Full name</label>
+                                    <input type="text" class="form-control" id="full-name" placeholder="Full name"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="an-email">Email address</label>
+                                    <input type="email" class="form-control" id="an-email" placeholder="Enter email"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="a-message">Message</label>
+                                    <textarea class="form-control" id="a-message" rows="4"></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit" class="btn btn-primary mx-auto">Send</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-                <div class="col-1"></div>
             </div>
-            <div class="row page" id="services">
-                <div class="col-1"></div>
-                 <div class="container-fluid col-10">
-                    <div class="start-page-container mt-5 mx-auto">
-                        <div class="start-page-header p-3">
-                            <div class="start-page-photo d-inline-block">
-                                <img src="Images/photo.jpg" alt="photo" class="img-thumbnail mt-4 ml-4 rounded">
-                            </div>
-                            <div class="start-page-header-content d-inline-block">
-                                <h1>Dapeng Zhang Services</h1>
-                                <p></p>
-                                <div></div>
-                            </div>
-                        </div>
-                        <div class="start-page-content px-4 py-5">
-                            <h2>About Me</h2>
-                            <p>blablabla</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1"></div>
-            </div>
-            <div class="row page" id="blog">
-                <div class="col-1"></div>
-                 <div class="container-fluid col-10">
-                    <div class="start-page-container mt-5 mx-auto">
-                        <div class="start-page-header p-3">
-                            <div class="start-page-photo d-inline-block">
-                                <img src="Images/photo.jpg" alt="photo" class="img-thumbnail mt-4 ml-4 rounded">
-                            </div>
-                            <div class="start-page-header-content d-inline-block">
-                                <h1>Dapeng Zhang Blog</h1>
-                                <p></p>
-                                <div></div>
-                            </div>
-                        </div>
-                        <div class="start-page-content px-4 py-5">
-                            <h2>About Me</h2>
-                            <p>blablabla</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1"></div>
-            </div>
-            <div class="row page" id="contact">
-                <div class="col-1"></div>
-                 <div class="container-fluid col-10">
-                    <div class="start-page-container mt-5 mx-auto">
-                        <div class="start-page-header p-3">
-                            <div class="start-page-photo d-inline-block">
-                                <img src="Images/photo.jpg" alt="photo" class="img-thumbnail mt-4 ml-4 rounded">
-                            </div>
-                            <div class="start-page-header-content d-inline-block">
-                                <h1>Dapeng Zhang Contact</h1>
-                                <p></p>
-                                <div></div>
-                            </div>
-                        </div>
-                        <div class="start-page-content px-4 py-5">
-                            <h2>About Me</h2>
-                            <p>blablabla</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1"></div>
-            </div>
-           
-
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <script src="css/fontawesome-free-5.9.0-web/js/all.js"></script>
+        <script src="react-0.14.3/build/react.js"></script>
+        <script src="react-0.14.3/build/react-dom.js"></script>
         <script src="script.js"></script>
     </body>
 </html>

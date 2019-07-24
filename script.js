@@ -1,28 +1,28 @@
-$('document').ready(function(){
-    pageNavigation('home');
+var currentId = "";
+
+ $(window).on('load', function(e){
+    pageNavigation();
 });
 
-$('#nav-home').on('click', function(){
-    pageNavigation('home');
+$(window).on( 'hashchange', function(e){
+    pageNavigation();
 });
 
-$('#nav-resume').on('click', function(){
-    pageNavigation('resume');
-});
-
-$('#nav-services').on('click', function(){
-    pageNavigation('services');
-});
-
-$('#nav-blog').on('click', function(){
-    pageNavigation('blog');
-});
-
-$('#nav-contact').on('click', function(){
-    pageNavigation('contact');
-});
-
-function pageNavigation(id){
-    $('.page').css('display', 'none');
-    $('#' + id).css('display', 'inline-block');
+function pageNavigation(){
+    var newId = window.location.hash;
+    if(newId === '') newId = "#home";
+    else
+    {
+        $(currentId).toggleClass('to-show');
+        $(currentId).css('display', 'none');
+    }
+    $(newId).toggleClass('to-show');
+    $(newId).css('display', 'block');
+    currentId = newId;
 }
+
+$('#technical-skills a').on('click', function (e) {
+    $("#technical-skills a").removeClass('active');
+    $(e.target).addClass('active');
+    console.log(e.target);
+  })
