@@ -24,5 +24,4 @@ function pageNavigation(){
 $('#technical-skills a').on('click', function (e) {
     $("#technical-skills a").removeClass('active');
     $(e.target).addClass('active');
-    console.log(e.target);
   })
